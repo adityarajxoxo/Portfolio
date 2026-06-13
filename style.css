@@ -411,3 +411,138 @@ main{
     width:18px;
     height:18px;
 }
+@media (max-width: 768px){
+
+    body{
+        padding:15px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .rightnav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    main{
+        grid-template-columns:1fr;
+    }
+
+    .service-cv{
+        flex-direction:column;
+        height:auto;
+    }
+
+    .services,
+    .cv{
+        width:100%;
+    }
+
+    .project-card{
+        grid-template-columns:1fr;
+    }
+
+    .project-img{
+        min-height:auto;
+        padding:20px;
+    }
+
+    .img img{
+        height:auto;
+    }
+}
+@media(max-width:768px){
+
+    nav{
+        flex-direction:row;
+        align-items:center;
+        gap:15px;
+    }
+
+    .rightnav{
+        display:flex;
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:12px;
+    }
+}
+.mobile-icon{
+    display:none;
+}
+@media(max-width:768px){
+
+    .desktop-link{
+        display:none;
+    }
+
+    .mobile-icon{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:45px;
+        height:45px;
+    }
+
+}
+@media(max-width:768px){
+
+    .leftnav{
+        flex-shrink:0;
+    }
+
+    .leftnav a{
+        white-space:nowrap;
+        padding:10px 14px;
+        font-size:14px;
+    }
+
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+}
+@media(max-width:768px){
+
+    nav{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        gap:0;
+    }
+
+    .leftnav{
+        flex:1;
+    }
+
+    .leftnav a{
+        white-space:nowrap;
+        font-size:14px;
+        padding:10px 14px;
+    }
+
+    .desktop-link{
+        display:none;
+    }
+
+    .mobile-icon{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:42px;
+        height:42px;
+    }
+
+    .rightnav{
+        flex:1;
+        display:flex;
+        justify-content:flex-end;
+        gap:12px;
+    }
+
+}
