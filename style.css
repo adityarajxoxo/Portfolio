@@ -1,0 +1,413 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f5f5f5;
+    color:#111;
+    padding:20px 40px;
+}
+
+/* NAV */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:20px;
+    margin-bottom:30px;
+    border-bottom:1px solid #d8d8d8;
+}
+
+.leftnav a,
+.rightnav a{
+    text-decoration:none;
+    color:#111;
+    border:1px solid #d8d8d8;
+    background:white;
+    padding:10px 18px;
+    border-radius:12px;
+    font-size:14px;
+    font-weight:500;
+}
+
+.rightnav{
+    display:flex;
+    gap:15px;
+}
+
+/* GRID */
+
+main{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+}
+
+/* COMMON CARD */
+
+.about,
+.services,
+.cv,
+.expertise,
+.whatido,
+.glance{
+    background:white;
+    border:1px solid #d8d8d8;
+    border-radius:16px;
+    overflow:hidden;
+}
+
+/* IMAGE */
+
+.img img{
+    width:100%;
+    height:430px;
+    object-fit:cover;
+    border-radius:16px;
+}
+
+.img h1{
+    text-align:center;
+    margin-top:18px;
+    font-size:24px;
+    font-weight:600;
+}
+
+/* ABOUT */
+
+.about{
+    height:300px;
+}
+
+.about h2{
+    padding:15px 20px;
+    border-bottom:1px solid #d8d8d8;
+    font-size:20px;
+}
+
+.about p{
+    padding:20px;
+    line-height:1.6;
+    color:#444;
+}
+
+.about button{
+    margin-left:20px;
+    padding:12px 20px;
+    border:none;
+    background:#111;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* SERVICES + CV */
+
+.service-cv{
+    display:flex;
+    gap:20px;
+    height:300px;
+}
+
+.services{
+    flex:3;
+    height: 450px;
+}
+
+.cv{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    border:1px solid #d8d8d8;
+    border-radius:16px;
+    background:white;
+    height: 200px;
+
+}
+
+.cv h1{
+    font-size:52px;
+    line-height:1;
+}
+
+.cv button{
+    margin-top:auto;
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#111;
+    color:white;
+    border-radius:12px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.services h2{
+    padding:15px 20px;
+}
+
+.cv{
+    padding:20px;
+}
+
+.services h2{
+    border-bottom:1px solid #d8d8d8;
+}
+
+.services h3{
+    padding:18px 20px;
+    font-size:16px;
+    font-weight:500;
+}
+
+/* EXPERTISE */
+
+.expertise{
+    height:260px;
+}
+
+.expertise h2{
+    padding:15px 20px;
+    border-bottom:1px solid #d8d8d8;
+}
+
+.skills{
+    list-style:none;
+    padding:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.skills li{
+    border:1px solid #d8d8d8;
+    border-radius:12px;
+    text-align:center;
+    padding:12px;
+    background:#fafafa;
+}
+
+/* WHAT I DO */
+
+.whatido{
+    height:380px;
+}
+
+.whatido h2{
+    padding:15px 20px;
+    border-bottom:1px solid #d8d8d8;
+}
+
+.whatido h3{
+    padding:20px 20px 8px;
+}
+
+.whatido p{
+    padding:0 20px;
+    color:#555;
+}
+
+/* GLANCE */
+
+.glance{
+    height:380px;
+}
+
+.glance h2{
+    padding:15px 20px;
+    border-bottom:1px solid #d8d8d8;
+}
+
+.stats-grid{
+    padding:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.stats-grid article{
+    border:1px solid #d8d8d8;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    background:#fafafa;
+}
+
+.stats-grid h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.stats-grid p{
+    font-size:14px;
+    color:#555;
+}
+
+/* SOCIAL */
+
+.social{
+    display:flex;
+    justify-content:space-around;
+    padding:15px 20px;
+    border-top:1px solid #d8d8d8;
+}
+
+.social a{
+    text-decoration:none;
+    color:#111;
+    font-weight:600;
+}
+/* ===========================
+   SELECTED WORK
+=========================== */
+
+.selected-work{
+    margin:60px 0 30px;
+}
+
+.selected-work button{
+    background:#fff;
+    border:1px solid #d5d5d5;
+    border-radius:12px;
+    padding:12px 24px;
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+/* ===========================
+   PROJECT CARD
+=========================== */
+
+.project-card{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:40px;
+    margin-bottom:80px;
+    align-items:start;
+}
+
+/* LEFT CARD */
+
+.project-info{
+    background:#fff;
+    border:1px solid #d5d5d5;
+    border-radius:16px;
+    overflow:hidden;
+}
+
+.title{
+    padding:24px;
+    font-size:32px;
+    font-weight:500;
+    border-bottom:1px solid #d5d5d5;
+}
+
+.description{
+    padding:30px 24px;
+    min-height:140px;
+    line-height:1.6;
+    color:#444;
+    border-bottom:1px solid #d5d5d5;
+}
+
+.project-meta{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.year,
+.url{
+    padding:20px 24px;
+}
+
+.year{
+    border-right:1px solid #d5d5d5;
+}
+
+.year span,
+.url span{
+    display:block;
+    margin-bottom:12px;
+    font-size:14px;
+    color:#666;
+}
+
+.year p{
+    font-size:18px;
+    font-weight:500;
+}
+
+.url a{
+    text-decoration:none;
+    color:#111;
+    font-weight:500;
+}
+
+/* RIGHT IMAGE CARD */
+
+.project-img{
+    background:#e8deeb;
+    border:1px solid #d5d5d5;
+    border-radius:16px;
+
+    min-height:520px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px;
+}
+
+.project-img img{
+    width:100%;
+    max-width:700px;
+    border-radius:6px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1000px){
+
+    .project-card{
+        grid-template-columns:1fr;
+    }
+
+    .project-img{
+        min-height:350px;
+        padding:20px;
+    }
+
+}
+.services{
+    flex:0 0 65%;
+    height:450px;
+}
+
+.cv{
+    flex:0 0 35%;
+    height:200px;
+}
+.services h3{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.services svg{
+    width:18px;
+    height:18px;
+}
