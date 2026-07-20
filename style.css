@@ -546,3 +546,16 @@ main{
     }
 
 }
+@media (max-width:768px){
+
+    .about,
+    .services,
+    .cv,
+    .expertise,
+    .whatido,
+    .glance{
+        height:auto;
+       
+    }
+
+}
